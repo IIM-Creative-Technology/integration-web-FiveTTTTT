@@ -128,21 +128,16 @@ button p{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 83%;
-    height: 38%;
+    width: 60%;
+    height: 60%;
 }
 
 .daRule{
-    width: 40%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    /* margin: 5%; */
+    width: 50%;
+    height: 50%;
 }
 
-.daRule p{
-    font-size: 16px;
-}
+
 
 
 .cercleR{
