@@ -53,11 +53,13 @@ header{
 button{
     border-radius: 22px;
     border: 0;
+    
     background-color: #bf3676;
 }
 
 button p{
     padding: 7px 13px;
+    color: #ffffff;
 }
 
 .intro, .titreR{
@@ -99,17 +101,17 @@ button p{
     left: 50%;
 }
 
-#daRules{
+.daRules{
     background-image: url(../img/background.png);
     background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    position: relative;
 }
 
-#daRules *{
+.daRules *:not(.buttDeux){
     color: #222222;    
 }
 
@@ -118,10 +120,12 @@ button p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    width: 66%;
 }
 
-.partUn{
-    text-align: center;
+.partUn h2{
+    color: #bf3676;
 }
 
 .partDeux{
@@ -132,12 +136,39 @@ button p{
     height: 60%;
 }
 
+.partDeux h3{
+    font-size: 15px;
+}
+
+.partDeux p:not(.criticTourn){
+    font-size: 12px;
+}
+
 .daRule{
     width: 50%;
     height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.daRule img{
+    margin: 10px;
+}
+
+.machin{
+    
 }
 
 
+.criticTourn{
+    width: 30%;
+    color: #929292;
+    font-size: 7px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(90deg);
+}
 
 
 .cercleR{
@@ -148,11 +179,108 @@ button p{
     margin: 1%;
 }
 
+.crea{
+    background-image: linear-gradient(to top, #2f2359, #4c3991);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.crea h2{
+    margin:  39px 155px 20px 155px;
+}
 
 
 
+.contPers {
+    background-image: url(../img/paris-personnalises.png);
+    background-size: cover;
+    /* background-position: top(1000px); */
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.contPers img{
+    width: 10%;
+    padding: 10px;
+}
+
+.newProp{
+    border-radius: 22px;
+    border: 0;
+    background-color: #fff;
+    width: 30%;
+    margin: 10px;
+    padding: 3px;
+    font-weight: bold;
+    color: #2f2359;
+    font-size: 10px;
+    text-align: center;
+}
+
+.titPers{
+    display: flex;
+    align-items: center;
+}
+
+.persona, .etapPers{
+    margin: 6%;
+}
+
+.persona, .contPers ul{
+    width: 40%;
+    font-size: 11px;
+    list-style-type: none;
+}
+
+.persona .annotat{
+    font-size: 8px;
+}
 
 
+.contPers li{
+    display: flex;
+    align-items: center;
+}
 
+.feedback{
+    height: 100vh;
+    display: flex;
+}
+.feedback img, .feedRet{
+    width: 50%;
+}
+.feedRet{
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.feedRet p{
+    width: 70%;
+    color: black;
+    font-size: 20px;
+    position: relative;
+}
 
+.feedRet p img{
+    position: absolute;
+    top: -30px;
+    right: -10px;
+    z-index: -1;
+    width: 20%;
+}
+
+.feedRet p::first-letter{
+    font-size: 40px;
+
+    float:left;
+}
+.expRet{
+    color: #bbbbbb;
+    font-size: 12px;
+}
