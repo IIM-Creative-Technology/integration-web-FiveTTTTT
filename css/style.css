@@ -458,7 +458,7 @@ footer{
 }
 
 
-@media screen and (min-width:600px) and (max-width:900px){
+@media screen and  (max-width:900px){
     header{
         position: relative;
         background-image: linear-gradient(to right, rgba(47,35,89,0.9)  ,rgba(76,57,145,0.9));
@@ -576,5 +576,38 @@ footer{
 }
 
 @media screen and (max-width:600px) {
-
+    header{
+        height: 50vh;
+    }
+    .menuHeader a{
+        font-size: 11px;
+    }
+    .fleche{
+        display: none;
+    }
+    .cercleR{
+        display: none;
+    }
+    .daRules{
+        height: 150vh;
+    }
+    .daRule{
+        display: block;
+    }
+    .block_img_slide{
+        width: 250px;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #block_slider{
+        width: 500px;
+    }
+    .etapPers{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .feedRet p {
+        font-size: 8px;
+    }
 }
