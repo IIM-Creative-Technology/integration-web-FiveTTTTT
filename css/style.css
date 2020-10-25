@@ -338,13 +338,17 @@ footer{
 }
 
 #block_slider{
-    width: 1200px;
+    width: 1040px;
     height: 50vh;
     display: flex;
-    /* animation: glisse 8s infinite; */
+    animation: glisse 8s infinite;
 }
 
-#block_slider img, #block_slider .descSlid{
+#block_slider a{
+    text-decoration: none;
+}
+
+#block_slider .logoEmi, #block_slider .descSlid{
     margin: 10px;
 }
 
@@ -352,29 +356,42 @@ footer{
     0%{
         transform: translateX(0);
     }
-    33%{
+    12.5%{
+        transform: translateX(0%);
+    }
+    25%{
         transform: translateX(-33%);
     }
-    66%{
-        transform: translateX(-66%);
+    50%{
+        transform: translateX(-33%);
+    }
+    62.5%{
+        transform: translateX(-60%);
+    }
+    75%{
+        transform: translateX(-60%);
     }
     100%{
         transform: translateX(0%)
     }
 }
 
+#block_slider a{
+    margin: 10px;
+}
+
 .block_img_slide{
-    width: 100%;
+    width: 500px;
     height: 50%;
     /* float: left; */
     /* position: relative; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    JUSTIFY-CONTENT: SPACE-AROUND;
     border-radius: 10px;
     box-shadow: 0.9px 10px 15.5px 0.5px rgba(98, 98, 98, 0.19);
     background-color: #ffffff;
-    margin: 10px;
+    
     
 }
 
@@ -406,6 +423,22 @@ footer{
     color: black;
 }
 
+.participant {
+    display: flex   ;
+}
+
 .descSlid .participant p{
     color: #747474;
+    text-align: end;
+    margin-left: 20px;
 }
+
+.partiImg{
+    position: relative;
+}
+
+.partiImg .imgDeux{
+    position: absolute;
+    left: 15px;
+}
+
