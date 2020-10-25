@@ -111,7 +111,7 @@ button p{
     position: relative;
 }
 
-.daRules *:not(.buttDeux){
+.daRules p:not(.buttDeux),.daRules h3{
     color: #222222;    
 }
 
@@ -124,8 +124,9 @@ button p{
     width: 66%;
 }
 
-.partUn h2{
+.partUn h2, .carou h2, hr{
     color: #bf3676;
+    margin: 10px;
 }
 
 .partDeux{
@@ -202,7 +203,7 @@ button p{
 .contPers {
     background-image: url(../img/paris-personnalises.png);
     background-size: cover;
-    /* background-position: top(1000px); */
+
     display: flex;
     justify-content: center;
     width: 80%;
@@ -290,50 +291,18 @@ button p{
     font-size: 12px;
 }
 
-footer{
-    background-image: url(../img/background-footer.png);
-    background-size: cover;
-    height: 50vh;
-    padding: 32px 55px;
-}
 
-.menuFoot{
-    width: 33%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-
-.menuFoot a{
-    text-decoration: none;
-    padding: 5px;
-}
-
-.contactFoot{
-    display: flex;
-    width: 100%;
-    
-    /* width: 67%; */
-}
-
-.resoFoot{
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-}
 
 
 
 .carou{
-    /* background-color: black; */
+    margin: 33px 55px ;
 }
 
 #slider{
-    width: 75%;
+    width: 100%;
     border: 1px solid white;
-    margin: auto;
+    margin: 10px;
     overflow: hidden;
 }
 
@@ -341,7 +310,7 @@ footer{
     width: 1040px;
     height: 50vh;
     display: flex;
-    animation: glisse 8s infinite;
+    animation: glisse 9s infinite;
 }
 
 #block_slider a{
@@ -356,20 +325,20 @@ footer{
     0%{
         transform: translateX(0);
     }
-    12.5%{
+    33%{
         transform: translateX(0%);
     }
-    25%{
+    /* 25%{
         transform: translateX(-33%);
-    }
-    50%{
+    } */
+    /* 66%{
         transform: translateX(-33%);
+    } */
+    49.5%{
+        transform: translateX(-40%);
     }
-    62.5%{
-        transform: translateX(-60%);
-    }
-    75%{
-        transform: translateX(-60%);
+    82.5%{
+        transform: translateX(-40%);
     }
     100%{
         transform: translateX(0%)
@@ -383,8 +352,6 @@ footer{
 .block_img_slide{
     width: 500px;
     height: 50%;
-    /* float: left; */
-    /* position: relative; */
     display: flex;
     align-items: center;
     JUSTIFY-CONTENT: SPACE-AROUND;
@@ -440,5 +407,53 @@ footer{
 .partiImg .imgDeux{
     position: absolute;
     left: 15px;
+}
+
+footer{
+    background-image: url(../img/background-footer.png);
+    background-size: cover;
+    height: 50vh;
+    padding: 32px 55px;
+}
+
+.hrCentered{
+    display: flex;
+    justify-content: center;
+}
+
+.menuFoot{
+    width: 33%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.menuFoot a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+.contactFoot{
+    position: relative;
+    width: 100%;
+    
+
+}
+
+.resoFoot{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.endWord{
+    text-align: center;
+    font-size: 11px;
+    padding: 10px;
 }
 
