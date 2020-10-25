@@ -284,3 +284,35 @@ button p{
     color: #bbbbbb;
     font-size: 12px;
 }
+
+footer{
+    background-image: url(../img/background-footer.png);
+    background-size: cover;
+    height: 50vh;
+    padding: 32px 55px;
+}
+
+.menuFoot{
+    
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.menuFoot a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+.contactFoot{
+    display: flex;
+}
+
+
+
+
+
+
+
